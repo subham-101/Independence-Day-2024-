@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Republic</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         */
+        .clr-orange .clr-white .clr-green{
+            height: 33.33vh;
+            width: 0;
+            position: absolute;
+            animation: glow 2s forwards;
+            background: #ff8011;
+        }
+        .clr-orange{
+            background: linear-gradient(to bottom, #ff8011,#ffae4a);
+            top: 0;
+            left: 0;
+            height: 33.33vh;
+        }
+
+        .clr-white{
+            background: #ffffff;
+            top: 33.33vh;
+            left: 0;
+            height: 33.33vh;
+            animation: glow 2s forwards;
+        }
+
+        .clr-green{
+            background: linear-gradient(to bottom, #75fc3b,#46ad1b);
+            top: 0;
+            left: 0;
+            height: 33.33vh;
+            
+        }
+        .content{
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes grow {
+            100%{
+                top:-5%
+                
+            }
+        }
+        .ashoka-chakra{
+            position: fixed;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            width: 0;
+            animation: spin 2s linear infinite;
+            mix-blend-mode: multiply;
+        }
+        @keyframes spin {
+            0%{
+                width: 30vmin;
+            }
+            100%{
+                width: 30vmin;
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="content">
+        <div class="clr-orange"></div>
+        <div class="clr-white"></div>
+        <div class="clr-green"></div>
+        <img class="ashoka-chakra" src="image/ashoka-chakra.svg" alt="ashoka-chakra">
+    </div>
+</body>
+</html>
